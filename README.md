@@ -15,7 +15,7 @@ Edit the `names` array in `script.js` to add your own names:
 
 ```javascript
 const names = [
-    "Alice", "Bob", "Charlie", // ... add your names here
+    "George", "Bob", "Sam", // ... add your names here
 ];
 ```
 
@@ -38,24 +38,6 @@ git branch -M main
 git remote add origin https://github.com/yourusername/repository-name.git
 git push -u origin main
 ```
-
-### Option 2: Netlify
-
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop your project folder
-3. Your site is live instantly!
-
-### Option 3: Vercel
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in the project directory
-3. Follow the prompts
-
-### Option 4: Cloudflare Pages
-
-1. Go to [pages.cloudflare.com](https://pages.cloudflare.com)
-2. Connect your GitHub repository
-3. Deploy with default settings
 
 ## How It Works
 
