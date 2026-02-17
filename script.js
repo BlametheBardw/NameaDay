@@ -1,5 +1,6 @@
 // Array of names - customize this with your own list
 const names = [
+  "Gary",
   "Felix",
   "Henry",
   "Anthony",
