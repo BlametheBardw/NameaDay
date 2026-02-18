@@ -3,10 +3,12 @@ const names =[
 "Fabian","Fairbanks","Fairfax","Falcon","Fallon","Felix","Fenrik","Fennel","Ferdinand","Fergus","Ferguson","Ferris","Fisher","Fitzgerald","Fitzwilliam","Fitzroy","Fletcher","Forrest","Forrester","Foster","Frankie","Franklin","Fraser","Freddie","Frederick","Fuller","Gabriel","Gable","Gaelen","Gaius","Galen","Gallagher","Galvin","Gareth","Garrett","Garrick","Gary","Gavin","Geoffrey","Geordie","Georgie","Gerald","Gerard","Gideon","Giles","Gordon","Grady","Graham","Gregory","Griffin","Grover","Gunther","Guthrie","Jackson","Jacob","Jaden","Jared","Jason","Jaspen","Jasper","Jeffrey","Jeremy","Jerome","Jerry","Jimmy","Joel","Joey","Jonah","Jordan","Joseph","Joshua","Julian","Julius","Justin"
 ]
 
-// Seeded random number generator using date
+// Better seeded random number generator using mulberry32
 function getSeededRandom(seed) {
-  const x = Math.sin(seed) * 10000;
-  return x - Math.floor(x);
+  let t = seed + 0x6D2B79F5;
+  t = Math.imul(t ^ (t >>> 15), t | 1);
+  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
 }
 
 // Convert date string to numeric seed
