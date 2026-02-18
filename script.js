@@ -1,28 +1,7 @@
 // Array of names - customize this with your own list
-const names = [
-  "Gary",
-  "Felix",
-  "Henry",
-  "Anthony",
-  "Wesley",
-  "Bentley",
-  "Zacharey",
-  "Brody",
-  "Teddy",
-  "Freddy",
-  "Timothy",
-  "Brantley",
-  "Finley",
-  "Jeremy",
-  "Cody",
-  "Rory",
-  "Tommy",
-  "Joey",
-  "Harvey",
-  "Bardley",
-  "Brady",
-  "Johnny",
-];
+const names =[
+"Fabian","Fairbanks","Fairfax","Falcon","Fallon","Felix","Fenrik","Fennel","Ferdinand","Fergus","Ferguson","Ferris","Fisher","Fitzgerald","Fitzwilliam","Fitzroy","Fletcher","Forrest","Forrester","Foster","Frankie","Franklin","Fraser","Freddie","Frederick","Fuller","Gabriel","Gable","Gaelen","Gaius","Galen","Gallagher","Galvin","Gareth","Garrett","Garrick","Gary","Gavin","Geoffrey","Geordie","Georgie","Gerald","Gerard","Gideon","Giles","Gordon","Grady","Graham","Gregory","Griffin","Grover","Gunther","Guthrie","Jackson","Jacob","Jaden","Jared","Jason","Jaspen","Jasper","Jeffrey","Jeremy","Jerome","Jerry","Jimmy","Joel","Joey","Jonah","Jordan","Joseph","Joshua","Julian","Julius","Justin"
+]
 
 // Seeded random number generator using date
 function getSeededRandom(seed) {
